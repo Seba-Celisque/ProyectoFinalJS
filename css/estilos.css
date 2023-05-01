@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bebas+Neue&family=Frijole&family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Permanent+Marker&family=Rubik+80s+Fade&family=Rubik+Dirt&family=Rubik+Storm&display=swap');
+:root {
+    --primary-color : #14141c;
+    --secondary-color: #ffffff;
+    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Acme', sans-serif;
+}
+
+nav {
+    font-size: 25px;
+}
+
+.hero {
+    background-image: url(../img/ciclismo.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1 {
+    font-family: 'Frijole', cursive;
+}
+
+.main-section {
+    margin-top: 30px;
+    color: var(--secondary-color);
+    display:flex;
+}
+.article-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+-card-main {
+    display: flex;
+    width: 33.33%;
+}
+card-main img {
+    width: 25rem;
+    border-radius: 40px;
+}
+
+.card-main h3 {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 50px;
+}
+
+.precio {
+    text-align: left;
+    font-size: 20px;
+}
+
+.navbar-toggler {
+    background-color: white;
+    text-align: center;
+}
+
+.button-container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.container-local {
+    text-align: center;
+}
+.button-57 {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #18181a;
+    color: #18181a;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 15px;
+    padding: 18px 18px 17px;
+    text-decoration: none;
+    cursor: pointer;
+    background: #fff;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-57 span:first-child {
+    position: relative;
+    transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 10;
+}
+
+.button-57 span:last-child {
+    color: white;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 100;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateY(225%) translateX(-50%);
+    height: 14px;
+    line-height: 13px;
+}
+
+.button-57:after {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transform-origin: bottom center;
+    transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    transform: skewY(9.3deg) scaleY(0);
+    z-index: 50;
+}
+
+.button-57:hover:after {
+    transform-origin: bottom center;
+    transform: skewY(9.3deg) scaleY(2);
+}
+
+.button-57:hover span:last-child {
+    transform: translateX(-50%) translateY(-100%);
+    opacity: 1;
+    transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+.boton-final {
+    margin-top: 100px;
+    margin: 2px solid white;
+}
+
+a {
+    text-decoration: none;
+    color: #14141c;
+}
+
+.title-index {
+    text-align: center;
+    color: #E0DCB4;
+    margin-top: 30px;
+}
+
+.presentacion-index {
+    text-align: center;
+    color: #E0DCB4;
+}
+
+.canvascontainer {
+    text-align: center;
+    color: #14141c;
+    margin-top: 50px;
+}
+
+.btn {
+    background-color: white ;
+}
+
+.btn:hover {
+    background-color: #14141c;
+    color: white;
+    border: 1px solid white;
+}
+
+.canvas {
+    border: 2px solid black;
+    margin-bottom: 5px;
+}
+
+.finalizar-title {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+label {
+    color: white;
+}
+
+.creditCardForm {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.CVV, #card-number-field {
+    display: inline-block;
+}
+.payment {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.card-details {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+#visa, #mastercard {
+    width: 2rem;
+    margin: 5px;
+    margin-top: 25px; 
+    margin-bottom: 25px;
+}
+
+.btn-default{
+    text-align: center;
+}
+
+.gracias-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.gracias-title {
+    color: white;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.verificacion-img {
+    width: 15rem;
+    margin-top: 25px;
+}
+
+.btn-inicio {
+    margin-top: 40px;
+}
+
+.accordion {
+    margin-top: 45px;
+    margin: 0 auto; 
+}
+
+.wap {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+}
